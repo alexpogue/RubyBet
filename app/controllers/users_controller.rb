@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @firstmicropost = @user.microposts.first.nil? ? "None found" : @user.microposts.first.content
+    @allbets = @user.bets.all
   end
 
   # GET /users/new

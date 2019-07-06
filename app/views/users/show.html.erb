@@ -15,5 +15,11 @@
   <%= @firstmicropost %>
 </p>
 
+<p>
+  <strong>Bets:</strong>
+  <%= @allbets.map { |bet| '<a href="/bets/' + bet.id.to_s + '">' + bet.id.to_s + '</a>' }.join(', ') %>
+</p>
+
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
