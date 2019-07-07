@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  end_time: 2019-07-06 14:51:36
+  status: 1
+  winning_option: 1
+
+two:
+  name: MyString
+  description: MyText
+  end_time: 2019-07-06 14:51:36
+  status: 1
+  winning_option: 1

@@ -17,7 +17,7 @@
 
 <p>
   <strong>Bets:</strong>
-  <%= @allbets.map { |bet| '<a href="/bets/' + bet.id.to_s + '">' + bet.id.to_s + '</a>' }.join(', ') %>
+  <%= safe_join(@user_bets.map { |bet| link_to "#{bet.id}", bet }, ", ".html_safe) %>
 </p>
 
 

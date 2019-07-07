@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bet_event.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bet_event.description %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @bet_event.end_time %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @bet_event.status %>
+</p>
+
+<p>
+  <strong>Winning option:</strong>
+  <%= @bet_event.winning_option %>
+</p>
+
+<%= link_to 'Edit', edit_bet_event_path(@bet_event) %> |
+<%= link_to 'Back', bet_events_path %>

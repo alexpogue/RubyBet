@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_06_144423) do
+ActiveRecord::Schema.define(version: 2019_07_06_195136) do
+
+  create_table "bet_events", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "end_time"
+    t.integer "status"
+    t.integer "winning_option"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "bets", force: :cascade do |t|
     t.datetime "created_at", null: false

@@ -1,0 +1,2 @@
+class BetEvent < ApplicationRecord
+end
